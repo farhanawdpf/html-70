@@ -1,0 +1,86 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="bootstrap/css/bootstrap.min.css">
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.13.1/font/bootstrap-icons.min.css">
+</head>
+
+<body>
+    <div class="container">
+
+        <!-- modal -->
+        <!-- <button type="button" class="btn btn-primary" data-bs-toggle="modal" data-bs-target="#addF">
+            Add form
+        </button> -->
+
+
+
+        <!-- Modal -->
+        <div class="modal fade" id="addF" tabindex="-1" aria-labelledby="exampleModalLabel" aria-hidden="false">
+            <div class="modal-dialog">
+                <div class="modal-content">
+                    <h1>hello</h1>
+                </div>
+
+            </div>
+        </div>
+        <!-- modal close -->
+
+
+
+
+        <table class="table table-striped">
+            <tr class="table-primary">
+                <th>Id</th>
+                <th>Name</th>
+                <th>Phone</th>
+                <th>Actions</th>
+            </tr>
+            <tr>
+                <td>01</td>
+                <td class="table-primary">Sumi</td>
+                <td>097809809</td>
+                <td>
+                    <button type="button" class="btn btn-success"><i class="bi bi-pencil"></i></button>
+                    <button type="button" class="btn btn-danger" data-bs-toggle="modal" data-bs-target="#addF">
+                        <i class="bi bi-archive-fill"></i>
+                    </button>
+                    <button type="button" class="btn btn-info"><i class="bi bi-eye"></i></button>
+                </td>
+            </tr>
+            <tr>
+                <td>02</td>
+                <td>Sumi</td>
+                <td>097809809</td>
+                <td>
+                    <button type="button" class="btn btn-success" data-bs-toggle="tooltip" data-bs-placement="right"
+                        title="Edit">
+                        <i class="bi bi-pencil-square"></i>
+                    </button>
+                </td>
+            </tr>
+            <tr>
+                <td>03</td>
+                <td>Sumi</td>
+                <td>097809809</td>
+                <td>
+                    Edit | Delete | view
+                </td>
+            </tr>
+        </table>
+    </div>
+
+    <script src=" bootstrap/js/bootstrap.bundle.min.js"> </script>
+    <script>
+        var tooltipTriggerList = [].slice.call(document.querySelectorAll('[data-bs-toggle="tooltip"]'))
+        var tooltipList = tooltipTriggerList.map(function (tooltipTriggerEl) {
+            return new bootstrap.Tooltip(tooltipTriggerEl)
+        })
+    </script>
+</body>
+
+</html>
