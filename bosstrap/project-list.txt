@@ -20,3 +20,7 @@
 13. Asadul(https://www.allegrohand.com/)
 14.Mahabub (https://www.bugatti.com/)
 15.Moin ()
+
+
+
+class="navbar navbar-expand-md navbar-dark fixed-top bg-dark"
