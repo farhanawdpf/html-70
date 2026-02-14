@@ -8,6 +8,9 @@
 </head>
 
 <body>
+
+    <button onclick="infoDetails()">submit</button>
+
     <script>
         // object literal
         let car = {
@@ -18,9 +21,21 @@
         console.log(car);
         console.log(typeof car);
         document.write(car.model + "<br>" + car.color + "<br>" + car.name);
+        document.write("<br>")
         //array
         let students = ["Sumi", "Lyies", "Polok", "Bappi", "Fahim"];
-        console.log(students);
+        let num = [2, 4, 78, 6765, 788]
+        console.log(students[2]);
+        document.write(students[2]);
+        document.write("<br>");
+        document.write(num[3]);
+        document.write("<br>");
+        //function
+        function infoDetails() {
+            alert("hello world");
+        }
+
+        infoDetails();
     </script>
 </body>
 
