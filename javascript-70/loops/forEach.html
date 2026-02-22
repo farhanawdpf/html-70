@@ -1,0 +1,30 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Document</title>
+</head>
+
+<body>
+  <h2>forEach() calls a function for each element in an array:</h2>
+  <pre>
+   array.forEach(function (item, index, array))
+</pre>
+
+  <script>
+    const fruits = ["apple", "orange", "cherry"];
+    fruits.forEach(info);
+
+    // fruits.forEach(function (item){ 
+    //    document.write(item)
+    // });
+
+    function info(item) {
+      document.write(item)
+    }
+  </script>
+</body>
+
+</html>
