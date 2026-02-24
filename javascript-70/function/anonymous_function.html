@@ -1,0 +1,31 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>anonymous function</title>
+</head>
+
+<body>
+    <h1>function(){}</h1>
+    <script>
+        // An anonymous function is a function that does not have a name.
+
+        let info = function (a, b) {
+            return a + b;
+        }
+        document.write(info(3, 6));
+        // const sqr=function (a){ 
+        //     return a*a;
+        // }
+
+        // document.write(sqr(3))
+
+        setTimeout(function () {
+            document.write("print after 2 second")
+        }, 2000);
+    </script>
+</body>
+
+</html>
