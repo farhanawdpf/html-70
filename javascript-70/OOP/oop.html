@@ -1,0 +1,57 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <script> 
+        class Car{ 
+            constructor(name,model,color){ 
+                this.name=name;
+                this.model=model;
+                this.color=color;
+            }
+
+            fullInformation ="zf";
+         
+            set na(value){ 
+                return this.fullInformation=value;
+            }
+             getInfo() {
+                return this.name + "new Car "+this.model;
+            }
+        }
+
+        // var a=new Car("bmw","343","red");
+        // var b=new Car("toyota","A343","Black");
+        // var c=new Car("Alien","A34300","Gray");
+        // document.write(a.name+","+a.model+","+a.color);
+        // document.write("<br>");
+
+      class Bike{ 
+          constructor(name,model,color,speed){ 
+            super(name,model,color);
+            this.speed=speed;
+            
+        }
+        showSpeed(){ 
+            return "Run first";
+        }
+      }
+      var p=new Bike("Honda","200","Black","160");
+      document.write(p.name+" "+p.model+" "+p.color+" "+p.speed+","+p.fullInformation);
+               document.write("<br>");
+
+      document.write(p.getInfo());
+      document.write("<br>");
+
+        document.write(p.fullInformation);
+
+      
+
+
+    </script>
+</body>
+</html>
