@@ -17,7 +17,7 @@
 
     </div><br>
     <div>
-      <label for="myEmail">Email</label><br />
+      <label for="myEmail">Email</label>
 
       <input type="text" id="myEmail" name="myEmail" onblur="checkEmail()">
       <span id="emailmsg" class="display-block"></span>
@@ -50,7 +50,6 @@
 
     <div>
       <input type="button" onclick="dyn_window()" value="Submit" />
-      <input type="button" onclick="dyn_window()" value="Reset" />
     </div>
   </form>
 
@@ -117,9 +116,9 @@
       with(a.document) {
         write("<html>");
         write("<head><title>" + title + "</title></head>");
-        write("<body>");
+        write("<body style='background-color:red'>");
 
-        write("<div>Name:" + name + "<br/>");
+        write("<div style='border:1px solid gray'>Name:" + name + "<br/>");
         write("Address:" + address + "<br/>");
         write("Address:" + email + "<br/>");
         write("Course:" + course + "<br/>");
@@ -127,6 +126,8 @@
         write("Subject:" + subject + "<br/></div>");
         write("<input type='button' value='Close me' onclick='self.close();' />");
         write("<input type='button' value='Print' onclick='self.print();' />");
+
+
 
       }
 
